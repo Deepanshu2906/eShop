@@ -4,7 +4,7 @@ Login Page.
 SignUp Page.
 Home Page.
     => Header. - Done.
-    => Footer - HW.
+    => Footer - Done
     => Show Product List. 
     => SearchBar.
 
