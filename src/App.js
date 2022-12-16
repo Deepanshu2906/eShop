@@ -43,10 +43,7 @@ function App() {
           <Route path="/register" element={<Register />}></Route>
           <Route path="/signIn" element={<Login />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
-          <Route
-            path="/*"
-            element={<p>Page not found. Enter the correct end points</p>}
-          ></Route>
+          <Route path="/*" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
     </AppContext.Provider>
