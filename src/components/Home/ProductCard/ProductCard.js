@@ -41,7 +41,7 @@ function ProductCard(values) {
           &nbsp;&nbsp;
           <span>({values.item.rating.count})</span>
         </p>
-        <p className="card-text">{values.item.description}</p>
+        <p className="card-text">{values.item.description.slice(0, 100)}</p>
         <button className="btn btn-success flex-box" onClick={handleAddToCart}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

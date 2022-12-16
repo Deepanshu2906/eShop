@@ -31,14 +31,14 @@ function CartItem(prop) {
           <img className="cart-img" src={prop.item.image}></img>
         </div>
         <div className="container">
-          <h4>{prop.item.title}</h4>
+          <h5>{prop.item.title}</h5>
         </div>
       </div>
 
       <div className="container-2">
         <button
           onClick={() => handleDelete(prop.index)}
-          className="btn btn-danger"
+          className="btn btn-danger deleteButton"
         >
           Delete item
         </button>

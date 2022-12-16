@@ -19,6 +19,7 @@
     align-items: center;
     margin: 5px 10px;
     width: fit-content;
+    /* padding: 5px; */
 }
 
 .cart-img {
@@ -40,10 +41,11 @@
     border-radius: 10px;
 }
 .deleteButton{
-    height:50px;
-    background-color: gold;
+    height:50px ;
     align-self: center;
-    border-radius: 10px;
+    width: max-content;
+    padding: 0px 5px;
+
 }
 
 .btn-group {
@@ -56,4 +58,8 @@
 
 .btn-minus {
     border-radius: 10px;
+}
+h5{
+    width: 100%;
+    font-size: 1rem;
 }
