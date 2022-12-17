@@ -17,16 +17,29 @@ function App() {
     switch (actionType) {
       case "ADD_ITEM": {
         // setCartItems(...cartItems, payload);
-        // console.log(payload);
+        console.log(payload);
         let items = cartItems.slice();
-        items.push(payload);
-        setCartItems(items);
+        console.log(items.every((item) => item.id != payload.id));
+        if (items.every((item) => item.id != payload.id)) {
+          items.push(payload);
+          setCartItems(items);
+        } else {
+          alert("This item already exists in cart.");
+          // let index = items.findIndex((p)=> p.id === payload.id)
+        }
         break;
       }
       case "UPDATE_ITEM": {
         let items = cartItems.slice();
         let index = items.findIndex((p) => p.id === payload.id);
         items[index] = payload;
+        setCartItems(items);
+        break;
+      }
+      case "DELETE_ITEM": {
+        let items = cartItems.slice();
+        let index = items.findIndex((p) => p.id === payload.id);
+        items.splice(index, 1);
         setCartItems(items);
         break;
       }

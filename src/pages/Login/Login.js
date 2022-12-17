@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -8,7 +8,13 @@ function Login() {
   }
   return (
     <div className="login-container">
-      <h3>Sign In.</h3>
+      <h3>Sign in</h3>
+      <p>
+        or{" "}
+        <Link to="/register">
+          <span>create an account</span>
+        </Link>
+      </p>
       <form action="" onSubmit={handleLogin} className="login-form">
         <div className="mb-3">
           <label htmlFor="" className="form-label">

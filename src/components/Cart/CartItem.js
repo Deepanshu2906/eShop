@@ -16,12 +16,12 @@ function CartItem(prop) {
   function handleQuantityChange(newQuantity) {
     console.log(newQuantity);
     prop.item.qty = newQuantity;
-    console.log(prop.item);
+    // console.log(prop.item);
     dispatcherEvents("UPDATE_ITEM", prop.item);
   }
 
-  function handleDelete(index) {
-    prop.deleteItem(index);
+  function handleDelete(item) {
+    dispatcherEvents("DELETE_ITEM", item);
   }
 
   return (
@@ -37,7 +37,7 @@ function CartItem(prop) {
 
       <div className="container-2">
         <button
-          onClick={() => handleDelete(prop.index)}
+          onClick={() => handleDelete(prop.item)}
           className="btn btn-danger deleteButton"
         >
           Delete item
