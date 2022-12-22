@@ -30,9 +30,12 @@ function Login() {
           <input className="form-control" type="password" />
         </div>
 
-        <button className="btn btn-success float-end" type="submit">
-          Login
-        </button>
+        <div className="new-user">
+          <Link to="/register">If New user, register here!</Link>
+          <button className="btn btn-success float-end" type="submit">
+            Login
+          </button>
+        </div>
       </form>
     </div>
   );

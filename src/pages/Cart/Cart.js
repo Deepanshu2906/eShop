@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-
+import { useContext } from "react";
 import Header from "../../components/Shared/Header/Header";
 import CartItem from "../../components/Cart/CartItem";
 import "./Cart.css";
@@ -20,7 +19,10 @@ function Cart() {
       <Header />
       {/* 2. Print updated total price */}
       <h4 className="totalPrice">Total Price: {totalPrice}</h4>
-      <div>
+      <h2 className="main-heading">
+        In cart: {cartItems.length ? cartItems.length + " items" : "Empty"}
+      </h2>
+      <div className="allCartItems">
         {cartItems.map((item, index) => (
           <CartItem
             // 4. Pass function as props.

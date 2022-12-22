@@ -12,7 +12,7 @@ function Register() {
     // console.log(user);
     // console.log(user.name);
     // console.log(user.address);
-    // to namvigate t another page
+    // to navigate t another page
     navigate("/signin");
   }
 
@@ -36,7 +36,7 @@ function Register() {
           />
         </div>
         <div className="row">
-          <div className="mb-3 col-6">
+          <div className="col-6">
             <label htmlFor="" className="form-label">
               First Name
             </label>

@@ -1,4 +1,9 @@
-
+.image-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 img{
     max-height: 270px;
     width: 100%;
@@ -14,6 +19,9 @@ img{
 
 .card{
     margin: 16px;
+}
+.price{
+    font-weight: 700;
 }
 
 .flex-box{

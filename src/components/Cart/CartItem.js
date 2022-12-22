@@ -36,12 +36,6 @@ function CartItem(prop) {
       </div>
 
       <div className="container-2">
-        <button
-          onClick={() => handleDelete(prop.item)}
-          className="btn btn-danger deleteButton"
-        >
-          Delete item
-        </button>
         <div className="container">
           <h4>&#8377; {totalPrice}</h4>
         </div>
@@ -63,6 +57,12 @@ function CartItem(prop) {
             +
           </button>
         </div>
+        <button
+          onClick={() => handleDelete(prop.item)}
+          className="btn btn-outline-danger deleteButton"
+        >
+          Remove
+        </button>
       </div>
     </div>
   );

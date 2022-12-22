@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
 import ProductCard from "../../components/Home/ProductCard/ProductCard";
-
+import "./Home.css";
 import Footer from "../../components/Shared/Footer/Footer";
 import Header from "../../components/Shared/Header/Header";
 
 function Home() {
   // Creating a state for products data.
-  // whenever there is achange in products, it will force component refresh.
+  // whenever there is a change in products, it will force component refresh.
 
   const [products, setProducts] = useState([]);
 
@@ -41,19 +41,18 @@ function Home() {
   return (
     <div>
       <Header />
-      <div>
-        <div className="row">
-          {products.map((product, i) => (
-            <div key={product.id} className="col-lg-3 col-md-6 col-sm-6">
-              <ProductCard
-                item={product}
-                index={i}
-                key={product.id}
-                // notify={notifyCartUpdate}
-              />
-            </div>
-          ))}
-        </div>
+
+      <div className="row">
+        {products.map((product, i) => (
+          <div key={product.id} className="col-lg-3 col-md-6 col-sm-6">
+            <ProductCard
+              item={product}
+              index={i}
+              key={product.id}
+              // notify={notifyCartUpdate}
+            />
+          </div>
+        ))}
       </div>
       <Footer />
     </div>

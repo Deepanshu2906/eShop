@@ -18,11 +18,13 @@ function ProductCard(values) {
   return (
     <div className="card">
       <h5 className="card-title">{values.item.title}</h5>
-      <img src={values.item.image} alt="..."></img>
+      <div className="image-container">
+        <img src={values.item.image} alt="..."></img>
+      </div>
       <hr />
       <div className="card-body">
         <p className="card-text">{values.item.category}</p>
-        <p className="card-text">&#8377; {values.item.price}</p>
+        <p className="card-text price">&#8377; {values.item.price}</p>
         <p className="stars">
           {/* {Array(stars.length).fill("⭐")} */}
           {stars.map((x, i) => (

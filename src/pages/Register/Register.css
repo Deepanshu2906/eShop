@@ -1,3 +1,9 @@
 .register-form{
-    margin: 3% 12%;
+    margin: 3% auto ;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center !important;
+    max-width: 800px;
+    
 }
